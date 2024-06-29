@@ -72,6 +72,9 @@ function ConvertHandler() {
     const galToL = 3.78541;
     const lbsToKg = 0.453592;
     const miToKm = 1.60934;
+    if (!initUnit) {
+      return undefined;
+    }
     const unit = initUnit.toLowerCase();
     let result;
 
